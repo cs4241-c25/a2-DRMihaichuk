@@ -1,7 +1,7 @@
 body {
     background:black;
     color:white;
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS", serif;
 }
 
 table, td, th {
@@ -21,6 +21,6 @@ table, td, th {
 }
 
 .important {
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", serif;
     font-size: larger;
 }
