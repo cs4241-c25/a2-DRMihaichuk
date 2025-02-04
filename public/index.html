@@ -10,10 +10,21 @@
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 <body>
+<h2 class="important">Pokemon Database</h2>
+<p class="important">~ To add a new Pokemon, enter a Pokemon's name that is not already registered and their stats and finish by clicking Add/Edit<br/>
+    ~ To modify a Pokemon's data, enter a Pokemon's name and the new stats you want entered and finish by clicking Add/Edit<br/>
+    ~ To delete a Pokemon's data, enter at least a Pokemon's name and finish by clicking Remove<br/></p>
 <form>
-    <label for="yourname">Your Name: </label><input type="text" id="yourname" value="your name here">
-    <button>submit</button>
+    <label for="pkmnName">Pokemon's Name: </label><input type="text" id="pkmnName" required> <br/>
+    <label for="pkmnHP">Pokemon's HP Stat: </label><input type="text" id="pkmnHP"> <br/>
+    <label for="pkmnAttack">Pokemon's Attack Stat: </label><input type="text" id="pkmnAttack"> <br/>
+    <label for="pkmnDefense">Pokemon's Defense Stat: </label><input type="text" id="pkmnDefense"> <br/>
+    <label for="pkmnSpAttack">Pokemon's Special Attack Stat: </label><input type="text" id="pkmnSpAttack"> <br/>
+    <label for="pkmnSpDefense">Pokemon's Special Defense Stat: </label><input type="text" id="pkmnSpDefense"> <br/>
+    <label for="pkmnSpeed">Pokemon's Speed Stat: </label><input type="text" id="pkmnSpeed"> <br/>
+    <button id="addbut">Add/Edit</button><button id="rembut">Remove</button>
 </form>
-
+<h2>Results</h2>
+<b id="info"></b>
 </body>
 </html>

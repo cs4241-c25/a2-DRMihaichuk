@@ -1,4 +1,26 @@
 body {
     background:black;
     color:white;
+    font-family: "Comic Sans MS";
+}
+
+table, td, th {
+    color:#E3B819;
+    border: 1px solid;
+    min-width: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#addbut {
+    background-color: green;
+}
+
+#rembut {
+    background-color: red;
+}
+
+.important {
+    font-family: "Times New Roman";
+    font-size: larger;
 }
