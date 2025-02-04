@@ -2,7 +2,7 @@
   "name": "cs4241-c25-a2-short-stack",
   "version": "0.1.0",
   "description": "WPI CS4241-C25 Assignment A2",
-  "author": "",
+  "author": "Devin Mihaichuk",
   "scripts": {
     "start": "node server.js"
   },
