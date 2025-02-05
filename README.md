@@ -4,6 +4,8 @@ There is also a derived field describing their specialty being either physical, 
 Attack or Special Attack is higher by a significant amount. It also can either be a sweeper, staller, or generalist depending
 on whether it is more offense or defense oriented.
 
+Glitch link is found [here](https://glitch.com/edit/#!/a2-drmihaichuk?path=README.md%3A1%3A0) for your convenience
+
 ## Technical Achievements
 - **Tech Achievement 1**: Have both the table and form readily available on one page
 - **Tech Achievement 2**: Able to modify existing by following the instructions above the form
@@ -25,3 +27,5 @@ on whether it is more offense or defense oriented.
 - **Design Achievement 3**: Changed the coloring of the datatable to make it stand out using element selectors
 - **Design Achievement 4**: Changed the color of the buttons using id selectors
 - **Design Achievement 5**: Changed the font family and size of the title and instructions using class selectors
+- **Design Achievement 6**: Turned bullet points into [this image](./public/assets/pokeball.png) which is in the assets folder
+- **Design Achievement 7**: Used grid to style my blocks of information in a way that is flexible to screen size

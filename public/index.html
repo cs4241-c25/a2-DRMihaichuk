@@ -10,21 +10,25 @@
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 <body>
-<h2 class="important">Pokemon Database</h2>
-<p class="important">~ To add a new Pokemon, enter a Pokemon's name that is not already registered and their stats and finish by clicking Add/Edit<br/>
-    ~ To modify a Pokemon's data, enter a Pokemon's name and the new stats you want entered and finish by clicking Add/Edit<br/>
-    ~ To delete a Pokemon's data, enter at least a Pokemon's name and finish by clicking Remove<br/></p>
-<form>
-    <label for="pkmnName">Pokemon's Name: </label><input type="text" id="pkmnName" required> <br/>
-    <label for="pkmnHP">Pokemon's HP Stat: </label><input type="text" id="pkmnHP"> <br/>
-    <label for="pkmnAttack">Pokemon's Attack Stat: </label><input type="text" id="pkmnAttack"> <br/>
-    <label for="pkmnDefense">Pokemon's Defense Stat: </label><input type="text" id="pkmnDefense"> <br/>
-    <label for="pkmnSpAttack">Pokemon's Special Attack Stat: </label><input type="text" id="pkmnSpAttack"> <br/>
-    <label for="pkmnSpDefense">Pokemon's Special Defense Stat: </label><input type="text" id="pkmnSpDefense"> <br/>
-    <label for="pkmnSpeed">Pokemon's Speed Stat: </label><input type="text" id="pkmnSpeed"> <br/>
-    <button id="addbut">Add/Edit</button><button id="rembut">Remove</button>
-</form>
-<h2>Results</h2>
-<b id="info"></b>
+<div class="grid-container">
+    <h2 class="grid-title">Pokemon Database</h2>
+    <ul class="grid-instruction">
+        <li>To add a new Pokemon, enter a Pokemon's name that is not already registered and their stats and finish by clicking Add/Edit</li>
+        <li>To modify a Pokemon's data, enter a Pokemon's name and the new stats you want entered and finish by clicking Add/Edit</li>
+        <li>To delete a Pokemon's data, enter at least a Pokemon's name and finish by clicking Remove</li>
+    </ul>
+    <form class="grid-form">
+        <label for="pkmnName">Pokemon's Name: </label><input type="text" id="pkmnName" maxlength="45"> <br/>
+        <label for="pkmnHP">Pokemon's HP Base Stat: </label><input type="text" id="pkmnHP"> <br/>
+        <label for="pkmnAttack">Pokemon's Attack Base Stat: </label><input type="text" id="pkmnAttack"> <br/>
+        <label for="pkmnDefense">Pokemon's Defense Base Stat: </label><input type="text" id="pkmnDefense"> <br/>
+        <label for="pkmnSpAttack">Pokemon's Special Attack Base Stat: </label><input type="text" id="pkmnSpAttack"> <br/>
+        <label for="pkmnSpDefense">Pokemon's Special Defense Base Stat: </label><input type="text" id="pkmnSpDefense"> <br/>
+        <label for="pkmnSpeed">Pokemon's Speed Base Stat: </label><input type="text" id="pkmnSpeed"> <br/>
+        <button id="addbut">Add/Edit</button><button id="rembut">Remove</button>
+    </form>
+    <h2 class="grid-results">Results</h2>
+    <b id="info" class="grid-table"></b>
+</div>
 </body>
 </html>

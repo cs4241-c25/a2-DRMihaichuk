@@ -5,6 +5,7 @@ const add = async function(event ) {
     // a new .html page for displaying results...
     // this was the original browser behavior and still
     // remains to this day
+
     event.preventDefault()
 
     const body = definebody();
@@ -41,6 +42,7 @@ const remove = async function(event ) {
     console.log( "text:", text )
 
     let pokemonList = JSON.parse(text);
+    console.log(pokemonList);
 
     generateTable(pokemonList);
 }

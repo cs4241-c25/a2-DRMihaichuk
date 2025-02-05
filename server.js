@@ -52,17 +52,26 @@ const handlePost = function( request, response ) {
         console.log( JSON.parse( dataString ) );
         const newPokemon = JSON.parse( dataString );
 
-        if (request.url === "/add") {
-            const index = appdata.findIndex(pokemon => pokemon.Pokemon.toUpperCase() === newPokemon.Pokemon.toUpperCase());
-            if (index > -1){
-                appdata.splice(index, 1);
+        if (newPokemon.Pokemon !== "") {
+            for (const index in newPokemon) {
+                console.log(index);
+                console.log(newPokemon[index])
+                console.log(newPokemon[index] === null);
+                if (newPokemon[index] === null) {newPokemon[index] = 1;}
             }
-            appdata.push(JSON.parse(dataString));
-        }
-        else if (request.url === "/remove") {
-            const index = appdata.findIndex(pokemon => pokemon.Pokemon.toUpperCase() === newPokemon.Pokemon.toUpperCase());
-            if (index > -1) {
-                appdata.splice(index, 1);
+
+            if (request.url === "/add") {
+                const index = appdata.findIndex(pokemon => pokemon.Pokemon.toUpperCase() === newPokemon.Pokemon.toUpperCase());
+                if (index > -1){
+                    appdata.splice(index, 1);
+                }
+                appdata.push(newPokemon);
+            }
+            else if (request.url === "/remove") {
+                const index = appdata.findIndex(pokemon => pokemon.Pokemon.toUpperCase() === newPokemon.Pokemon.toUpperCase());
+                if (index > -1) {
+                    appdata.splice(index, 1);
+                }
             }
         }
 
